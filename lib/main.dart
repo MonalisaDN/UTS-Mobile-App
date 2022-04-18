@@ -46,7 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
           child: Column(
             children: <Widget>[
               CircleAvatar(
-                radius: 70,
+                radius: 60,
                 backgroundImage: AssetImage("assets/images/foto.jpg"),
                 ),
                 Container(
@@ -59,56 +59,146 @@ class _MyHomePageState extends State<MyHomePage> {
                   )), 
                 ),
                 Container(
-                  height: 18,
+                  height: 40,
                   child: Text("Mahastudent", style: TextStyle(color: Colors.white)),
                 ),
             ]
           ),
       ),
-      ),);
+      ),
       body: Column(
         children: <Widget>[
          Row(
            mainAxisAlignment: MainAxisAlignment.center,
            children: <Widget>[ 
              Container(
-               child: Text("About me", style: TextStyle(fontWeight: FontWeight.bold)),
+               height: 70,
+             ),
+             Container(
+               height: 15,
+               child: Text("About me", style: GoogleFonts.roboto(fontWeight: FontWeight.bold)),
              ), 
             ]
-           ),]
-      );
+           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Container(
-                height: 30,
-                child: Text("Hi, currently I am a Information Technology Big student at the Faculty of engineering and Informatics at UNDIKNAS University"),
-              ),//container
+                width: 350,
+                child: Text("Hi, currently I am a student majoring in Information Technology Faculty of engineering and Informatics Universitas Pendidikan Nasional Denpasar", style: GoogleFonts.nanumGothic(color: Colors.grey),
+                textAlign: TextAlign.center,
+              )),
+              Container(
+                padding: EdgeInsets.only(bottom: 13),
+                width: 150,
+                decoration: BoxDecoration(
+                  border: Border(
+                    bottom: BorderSide(
+                      color: Color.fromARGB(255, 216, 212, 212), width: 1)),
+              ),)//container
+        ]),
+          Row(
+           mainAxisAlignment: MainAxisAlignment.center,
+           children: <Widget>[ 
+             Container(
+               height: 50,
+             ),
+             Container(
+               child: Text("Skills", style: GoogleFonts.roboto(fontWeight: FontWeight.bold)),
+             ),
+           ]), 
+          Column(),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+                Text("5"),
+                 Icon(
+                   Icons.star_rate,
+                   size: 17,
+                   color: Colors.orange,
+                 ),
+                 SizedBox(width: 20,),
+                 Text("4"),
+                 Icon(
+                   Icons.star_rate,
+                   size: 17,
+                   color: Colors.orange,
+                 ),
+                 SizedBox(width: 25,),
+                 Text("5"),
+                 Icon(
+                   Icons.star_rate,
+                   size: 17,
+                   color: Colors.orange,
+                 ),
+                 SizedBox(width: 25,),
+                 Text("4"),
+                 Icon(
+                   Icons.star_rate,
+                   size: 17,
+                   color: Colors.orange,
+                 ),
+                 SizedBox(width: 20,),
+               ],
+             ),
+          Column(),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+            Text("C", style: GoogleFonts.nanumGothic(color: Colors.grey)),
+            SizedBox(width: 30),
+            Text("C++", style: GoogleFonts.nanumGothic(color: Colors.grey)),
+            SizedBox(width: 15),
+            Text("Python", style: GoogleFonts.nanumGothic(color: Colors.grey)),
+            SizedBox(width: 5),
+            Text("English", style: GoogleFonts.nanumGothic(color: Colors.grey)),
+            SizedBox(width: 5),
             ]
-          );
-          // Row(
-          //   mainAxisAlignment: MainAxisAlignment.center,
-          //   children: <Widget> [
-          //     ElevatedButton(
-          //       child: Text("Register", style: TextStyle(color: Colors.blue),
-          //       ),
-          //       style: ElevatedButton.styleFrom(primary: Colors.white),
-          //       onPressed: () {},
-          //     ),
-          //     ElevatedButton(
-          //       child: Text("Login", style: TextStyle(color: Colors.white),
-          //       ),
-          //       style: ElevatedButton.styleFrom(primary: Colors.blue),
-          //       onPressed: () {},
-//                  ),
-//                  ],
-//                  ),
-//                  ],
-//             ),],);
-//   }
-
-
-  
-
-// }
-}}
+        ),
+        Column(
+            children: <Widget>[
+              Container(
+                padding: EdgeInsets.only(bottom: 13),
+                width: 150,
+                decoration: BoxDecoration(
+                  border: Border(
+                    bottom: BorderSide(
+                      color: Color.fromARGB(255, 216, 212, 212), width: 1)),
+              ),
+              )]
+        ),
+        Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Container(
+               height: 50,
+             ),
+             Container(
+               child: Text("Find me on", style: GoogleFonts.roboto(fontWeight: FontWeight.bold)),
+             ),]),
+          Column(),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+                 Icon(
+                   Icons.facebook,
+                   size: 20,
+                   color: Colors.blue,
+                 ),
+                 SizedBox(width: 5),
+                 Icon(
+                   Icons.whatsapp,
+                   size: 20,
+                   color: Colors.blue,
+                 ),
+                 SizedBox(width: 3),
+                 Icon(
+                   Icons.telegram,
+                   size: 20,
+                   color: Colors.blue,
+                 ),
+                 SizedBox(width: 1),
+        ])])
+      );        
+  }
+}
